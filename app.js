@@ -20,8 +20,13 @@ const students = createApp({
       "Maria",
     ]);
 
+    const longLength = computed(() => {
+      if (s.length > 7) return "yellow";
+    });
+
     return {
       students,
+      longLength,
     };
   },
 }).mount("#app");
