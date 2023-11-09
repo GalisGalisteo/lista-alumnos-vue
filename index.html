@@ -13,7 +13,7 @@
     <main class="container" id="app">
 
         <article v-for="s in students">
-            <p :style="{backgroundColor: s.length > 7 ? 'yellow' : '' }">Hola yo soy {{ s }}</p>
+            <p :style="{backgroundColor: longLength(s)}">Hola yo soy {{ s }}</p>
         </article>
 
     </main>

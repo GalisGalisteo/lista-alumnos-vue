@@ -4,7 +4,7 @@ import {
   computed,
 } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
-const students = createApp({
+createApp({
   setup() {
     const students = ref([
       "Albertina",
@@ -20,9 +20,9 @@ const students = createApp({
       "Maria",
     ]);
 
-    const longLength = computed(() => {
+    const longLength = (s) => {
       if (s.length > 7) return "yellow";
-    });
+    };
 
     return {
       students,
